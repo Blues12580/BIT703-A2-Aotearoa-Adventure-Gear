@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Enter shipping details for your Aotearoa Adventure Gear order.">
+
+    <title>Aotearoa Adventure Gear | Shipping Details</title>
+
+    <!-- Bootstrap CSS stored locally -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-style.css">
+</head>
+
+
+<body id="top">
+
+
+    <!-- =====================================================
+         HEADER AND NAVIGATION
+         ===================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand"
+                   href="index.html">
+
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear logo"
+                         class="site-logo">
+
+                </a>
+
+
+                <!-- Mobile navigation button -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="index.html#about">
+                                About
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="shop.html">
+                                Shop
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="#footer">
+                                Help
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item ms-lg-2">
+
+                            <a class="btn btn-adventure"
+                               href="cart.html">
+
+                                <span aria-hidden="true">🛒</span>
+                                Your Cart
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             CHECKOUT PROGRESS
+             ================================================= -->
+
+        <section class="checkout-progress-section">
+
+            <div class="container">
+
+                <nav aria-label="Checkout progress">
+
+                    <div class="checkout-progress">
+
+
+                        <!-- Step 1 - completed -->
+
+                        <div class="checkout-step completed">
+
+                            <div class="checkout-step-number">
+                                ✓
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Shopping Cart
+                            </div>
+
+                        </div>
+
+
+                        <div class="checkout-line completed-line"></div>
+
+
+                        <!-- Step 2 - active -->
+
+                        <div class="checkout-step active">
+
+                            <div class="checkout-step-number">
+                                2
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Shipping Details
+                            </div>
+
+                        </div>
+
+
+                        <div class="checkout-line"></div>
+
+
+                        <!-- Step 3 -->
+
+                        <div class="checkout-step">
+
+                            <div class="checkout-step-number">
+                                3
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Payment Options
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SHIPPING DETAILS
+             ================================================= -->
+
+        <section class="shipping-section">
+
+            <div class="container">
+
+                <h1 class="shipping-page-title">
+                    Shipping Details
+                </h1>
+
+
+                <div class="row g-5">
+
+
+                    <!-- =====================================
+                         SHIPPING FORM
+                         ===================================== -->
+
+                    <div class="col-12 col-lg-8">
+
+                        <form id="shippingForm"
+                              class="needs-validation"
+                              novalidate>
+
+
+                            <!-- =================================
+                                 NAME
+                                 ================================= -->
+
+                            <div class="row g-3">
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="firstName"
+                                           class="form-label">
+
+                                        First Name
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="firstName"
+                                           name="firstName"
+                                           autocomplete="given-name"
+                                           minlength="2"
+                                           maxlength="40"
+                                           required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter your first name.
+                                    </div>          
+
+                                </div>
+
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="lastName"
+                                           class="form-label">
+
+                                        Last Name
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="lastName"
+                                           name="lastName"
+                                           minlength="2"
+                                           maxlength="40"
+                                           required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter your last name.
+                                    </div>    
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 ADDRESS
+                                 ================================= -->
+
+                            <div class="mt-4">
+
+                                <label for="address"
+                                       class="form-label">
+
+                                    Street Address
+
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       id="address"
+                                       name="address"
+                                       autocomplete="address-line1"
+                                       placeholder="Street number and street name"
+                                       minlength="5"
+                                       maxlength="100"
+                                       required>
+
+                                <div class="invalid-feedback">
+                                    Please enter a valid street address.
+                                </div>           
+
+                            </div>
+
+
+                            <div class="mt-3">
+
+                                <label for="address2"
+                                       class="form-label">
+
+                                    Address Line 2
+                                    <span class="optional-text">
+                                        (optional)
+                                    </span>
+
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       id="address2"
+                                       name="address2"
+                                       autocomplete="address-line2"
+                                       placeholder="Apartment, unit or building"
+                                       maxlength="100">
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 COUNTRY AND CITY
+                                 ================================= -->
+
+                            <div class="row g-3 mt-1">
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="country"
+                                           class="form-label">
+
+                                        Country
+
+                                    </label>
+
+                                    <select class="form-select"
+                                            id="country"
+                                            name="country"
+                                            autocomplete="country-name"
+                                            required>
+
+                                        <option value="">
+                                            Select country
+                                        </option>
+
+                                        <option value="NZ"
+                                                selected>
+                                            New Zealand
+                                        </option>
+
+                                        <option value="AU">
+                                            Australia
+                                        </option>
+
+                                    </select>
+
+
+                                    <div class="invalid-feedback">
+                                        Please select a country.
+                                    </div>    
+
+                                </div>
+
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="city"
+                                           class="form-label">
+
+                                        City / Town
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="city"
+                                           name="city"
+                                           autocomplete="address-level2"
+                                           minlength="2"
+                                           maxlength="50"
+                                           required>
+                                        
+                                           
+
+                                    <div class="invalid-feedback">
+                                        Please enter your city or town.
+                                    </div>           
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 POSTCODE AND PHONE
+                                 ================================= -->
+
+                            <div class="row g-3 mt-1">
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="postcode"
+                                           class="form-label">
+
+                                        Postcode
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="postcode"
+                                           name="postcode"
+                                           autocomplete="postal-code"
+                                           inputmode="numeric"
+                                           pattern="[0-9]{4}"
+                                           maxlength="4"
+                                           placeholder="e.g. 1010"
+                                           required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter a valid four-digit New Zealand postcode.
+                                    </div>           
+
+                                    <div class="form-text">
+                                        Enter a four-digit New Zealand postcode.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="phone"
+                                           class="form-label">
+
+                                        Phone Number
+
+                                    </label>
+
+                                    <input type="tel"
+                                           class="form-control"
+                                           id="phone"
+                                           name="phone"
+                                           autocomplete="tel"
+                                           pattern="[0-9+\s()-]{7,20}"
+                                           placeholder="e.g. 021 123 4567"
+                                           minlength="8"
+                                           maxlength="20"
+                                           required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter a valid phone number.
+                                    </div>          
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 EMAIL
+                                 ================================= -->
+
+                            <div class="mt-4">
+
+                                <label for="email"
+                                       class="form-label">
+
+                                    Email Address
+
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       id="email"
+                                       name="email"
+                                       autocomplete="email"
+                                       placeholder="name@example.com"
+                                       required>
+
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>           
+
+                            </div>
+
+
+
+                            <hr class="shipping-divider">
+
+
+
+                            <!-- =================================
+                                 SHIPPING METHOD
+                                 ================================= -->
+
+                            <fieldset class="shipping-options">
+
+                                <legend>
+                                    Shipping Options
+                                </legend>
+
+
+                                <!-- Standard -->
+
+                                <div class="shipping-option">
+
+                                    <div class="form-check">
+
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="shippingMethod"
+                                               id="standardShipping"
+                                               value="standard"
+                                               checked>
+
+                                        <label class="form-check-label"
+                                               for="standardShipping">
+
+                                            <strong>
+                                                Standard NZ Shipping
+                                            </strong>
+
+                                            <span class="shipping-description">
+                                                Estimated delivery: 3–5 business days
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+
+                                    <span class="shipping-price">
+                                        $25.00
+                                    </span>
+
+                                </div>
+
+
+
+                                <!-- Express -->
+
+                                <div class="shipping-option">
+
+                                    <div class="form-check">
+
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="shippingMethod"
+                                               id="expressShipping"
+                                               value="express">
+
+                                        <label class="form-check-label"
+                                               for="expressShipping">
+
+                                            <strong>
+                                                Express NZ Shipping
+                                            </strong>
+
+                                            <span class="shipping-description">
+                                                Estimated delivery: 1–2 business days
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+
+                                    <span class="shipping-price">
+                                        $39.00
+                                    </span>
+
+                                </div>
+
+
+                            </fieldset>
+
+
+
+                            <!-- =================================
+                                 FREE SHIPPING OFFER
+                                 Task 2 JavaScript will update this
+                                 ================================= -->
+
+                            <div class="free-shipping-offer"
+                                 id="freeShippingOffer">
+
+                                <strong>
+                                    Free Shipping Offer
+                                </strong>
+
+                                <p class="mb-0">
+
+                                    Spend over $600 and standard
+                                    New Zealand shipping is free.
+
+                                </p>
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 BUTTONS
+                                 ================================= -->
+
+                            <div class="shipping-actions">
+
+                                <button type="submit"
+                                        class="btn btn-adventure btn-lg">
+
+                                    Next
+
+                                </button>
+
+
+                                <a href="cart.html"
+                                   class="btn btn-outline-adventure btn-lg">
+
+                                    Cancel
+
+                                </a>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         ORDER SUMMARY
+                         ===================================== -->
+
+                    <aside class="col-12 col-lg-4">
+
+                        <div class="cart-summary shipping-summary">
+
+                            <h2>
+                                Summary
+                            </h2>
+
+
+                            <hr>
+
+
+
+                            <!-- Product 1 -->
+
+                            <div class="shipping-summary-product">
+
+                                <img src="images/backpack.jpeg"
+                                     alt="Southern Alps Hiking Pack"
+                                     class="shipping-summary-image">
+
+
+                                <div class="shipping-summary-details">
+
+                                    <p class="summary-product-name">
+                                        Southern Alps Hiking Pack
+                                    </p>
+
+                                    <small>
+                                        Qty: 1
+                                    </small>
+
+                                </div>
+
+
+                                <span>
+                                    $249.00
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Product 2 -->
+
+                            <div class="shipping-summary-product">
+
+                                <img src="images/hiking-boots.jpeg"
+                                     alt="Fiordland Trail Boots"
+                                     class="shipping-summary-image">
+
+
+                                <div class="shipping-summary-details">
+
+                                    <p class="summary-product-name">
+                                        Fiordland Trail Boots
+                                    </p>
+
+                                    <small>
+                                        Qty: 1
+                                    </small>
+
+                                </div>
+
+
+                                <span>
+                                    $199.00
+                                </span>
+
+                            </div>
+
+
+                            <hr>
+
+
+
+                            <!-- Subtotal -->
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <span id="shippingSubtotal">
+                                    $448.00
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Shipping -->
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Shipping
+                                </span>
+
+                                <span id="shippingCost">
+                                    $25.00
+                                </span>
+
+                            </div>
+
+
+                            <hr>
+
+
+
+                            <!-- Total -->
+
+                            <div class="summary-row summary-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <span id="shippingTotal">
+                                    $473.00
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Free shipping message -->
+
+                            <p class="summary-note"
+                               id="shippingMessage">
+
+                                Add $152.01 or more to your cart
+                                to qualify for free standard shipping.
+
+                            </p>
+
+
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer"
+            id="footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- Company -->
+
+                <div class="col-12 col-md-4">
+
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear"
+                         class="footer-logo">
+
+                    <p class="mt-3">
+
+                        Outdoor equipment for adventures
+                        throughout Aotearoa New Zealand.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Main Menu -->
+
+                <div class="col-6 col-md-2">
+
+                    <h2 class="h6">
+                        Main Menu
+                    </h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Help
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Customer Care -->
+
+                <div class="col-6 col-md-3">
+
+                    <h2 class="h6">
+                        Customer Care
+                    </h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="shipping.html">
+                                Shipping
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Returns
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Discover -->
+
+                <div class="col-12 col-md-3">
+
+                    <h2 class="h6">
+                        Discover
+                    </h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="shop.html">
+                                Hiking
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Camping
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Outdoor Clothing
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="text-center mb-0">
+
+                &copy; 2026 Aotearoa Adventure Gear.
+                All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript stored locally -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/shipping.js"></script>
+
+
+
+</body>
+
+</html>

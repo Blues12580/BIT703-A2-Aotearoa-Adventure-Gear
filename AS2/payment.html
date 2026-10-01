@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Choose a payment option for your Aotearoa Adventure Gear order.">
+
+    <title>Aotearoa Adventure Gear | Payment Options</title>
+
+    <!-- Bootstrap CSS stored locally -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-style.css">
+</head>
+
+
+<body id="top">
+
+
+    <!-- =====================================================
+         HEADER AND NAVIGATION
+         ===================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand"
+                   href="index.html">
+
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear logo"
+                         class="site-logo">
+
+                </a>
+
+
+                <!-- Mobile navigation button -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="index.html#about">
+                                About
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="shop.html">
+                                Shop
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="#footer">
+                                Help
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item ms-lg-2">
+
+                            <a class="btn btn-adventure"
+                               href="cart.html">
+
+                                <span aria-hidden="true">🛒</span>
+                                Your Cart
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             CHECKOUT PROGRESS
+             ================================================= -->
+
+        <section class="checkout-progress-section">
+
+            <div class="container">
+
+                <nav aria-label="Checkout progress">
+
+                    <div class="checkout-progress">
+
+
+                        <!-- Step 1 completed -->
+
+                        <div class="checkout-step completed">
+
+                            <div class="checkout-step-number">
+                                ✓
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Shopping Cart
+                            </div>
+
+                        </div>
+
+
+                        <div class="checkout-line completed-line"></div>
+
+
+                        <!-- Step 2 completed -->
+
+                        <div class="checkout-step completed">
+
+                            <div class="checkout-step-number">
+                                ✓
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Shipping Details
+                            </div>
+
+                        </div>
+
+
+                        <div class="checkout-line completed-line"></div>
+
+
+                        <!-- Step 3 active -->
+
+                        <div class="checkout-step active">
+
+                            <div class="checkout-step-number">
+                                3
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Payment Options
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PAYMENT OPTIONS
+             ================================================= -->
+
+        <section class="payment-section">
+
+            <div class="container">
+
+                <h1 class="payment-page-title">
+                    Payment Options
+                </h1>
+
+
+                <div class="row g-5">
+
+
+                    <!-- =====================================
+                         PAYMENT FORM
+                         ===================================== -->
+
+                    <div class="col-12 col-lg-8">
+
+                        <form id="paymentForm"
+                              class="needs-validation"
+                              novalidate>
+
+
+                            <!-- =================================
+                                 PAYMENT METHOD
+                                 ================================= -->
+
+                            <fieldset class="payment-methods">
+
+                                <legend>
+                                    Select Payment Method
+                                </legend>
+
+
+                                <!-- Credit / Debit Card -->
+
+                                <div class="payment-method-option">
+
+                                    <div class="form-check">
+
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="paymentMethod"
+                                               id="cardPayment"
+                                               value="card"
+                                               checked>
+
+                                        <label class="form-check-label"
+                                               for="cardPayment">
+
+                                            <strong>
+                                                Credit or Debit Card
+                                            </strong>
+
+                                            <span class="payment-method-description">
+                                                Pay securely using your card.
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+
+                                    <div class="payment-icons"
+                                         aria-hidden="true">
+
+                                        <span class="payment-icon">
+                                            VISA
+                                        </span>
+
+                                        <span class="payment-icon">
+                                            MC
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Internet Banking -->
+
+                                <div class="payment-method-option">
+
+                                    <div class="form-check">
+
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="paymentMethod"
+                                               id="bankPayment"
+                                               value="bank">
+
+                                        <label class="form-check-label"
+                                               for="bankPayment">
+
+                                            <strong>
+                                                Internet Banking
+                                            </strong>
+
+                                            <span class="payment-method-description">
+                                                Pay using your online banking service.
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+                            </fieldset>
+
+
+
+                            <hr class="payment-divider">
+
+
+
+                            <!-- =================================
+                                 CARD DETAILS
+                                 ================================= -->
+
+                            <div id="cardDetails">
+
+                                <h2 class="h4 mb-4">
+                                    Card Details
+                                </h2>
+
+
+
+                                <!-- Name on card -->
+
+                                <div class="mb-4">
+
+                                    <label for="cardName"
+                                           class="form-label">
+
+                                        Name on Card
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="cardName"
+                                           name="cardName"
+                                           autocomplete="cc-name"
+                                           minlength="2"
+                                           maxlength="80"
+                                           placeholder="Name shown on card"
+                                           required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter the name shown on the card.
+                                    </div>           
+
+                                </div>
+
+
+
+                                <!-- Card number -->
+
+                                <div class="mb-4">
+
+                                    <label for="cardNumber"
+                                           class="form-label">
+
+                                        Card Number
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="cardNumber"
+                                           name="cardNumber"
+                                           autocomplete="off"
+                                           inputmode="numeric"
+                                           pattern="[0-9 ]{13,23}"
+                                           minlength="13"
+                                           maxlength="23"
+                                           placeholder="1234 5678 9012 3456"
+                                           required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter a valid card number.
+                                    </div>           
+
+                                    <div class="form-text">
+                                        Enter the card number using numbers only.
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Expiry and security code -->
+
+                                <div class="row g-3">
+
+
+                                    <!-- Expiry -->
+
+                                    <div class="col-12 col-md-6">
+
+                                        <label for="expiryDate"
+                                               class="form-label">
+
+                                            Expiry Date
+
+                                        </label>
+
+                                        <input type="month"
+                                               class="form-control"
+                                               id="expiryDate"
+                                               name="expiryDate"
+                                               autocomplete="off"
+                                               required>
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid expiry date.
+                                        </div>           
+
+                                    </div>
+
+
+
+                                    <!-- CVV -->
+
+                                    <div class="col-12 col-md-6">
+
+                                        <label for="securityCode"
+                                               class="form-label">
+
+                                            Security Code
+
+                                        </label>
+
+                                        <input type="password"
+                                               class="form-control"
+                                               id="securityCode"
+                                               name="securityCode"
+                                               autocomplete="off"
+                                               inputmode="numeric"
+                                               pattern="[0-9]{3,4}"
+                                               minlength="3"
+                                               maxlength="4"
+                                               placeholder="CVV"
+                                               required>
+
+                                        <div class="invalid-feedback">
+                                            Please enter a valid security code.
+                                        </div>    
+                                    
+
+
+                                        <div class="form-text">
+                                            3 or 4 digits from your card.
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 BILLING ADDRESS
+                                 ================================= -->
+
+                            <hr class="payment-divider">
+
+
+                            <fieldset>
+
+                                <legend class="h4">
+                                    Billing Address
+                                </legend>
+
+
+                                <div class="form-check mt-3">
+
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           id="sameAsShipping"
+                                           name="sameAsShipping"
+                                           checked>
+
+                                    <label class="form-check-label"
+                                           for="sameAsShipping">
+
+                                        Same as shipping address
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <!-- =================================
+                                 SECURITY MESSAGE
+                                 ================================= -->
+
+                            <div class="payment-security-message">
+
+                                <span class="payment-lock"
+                                      aria-hidden="true">
+                                    🔒
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Secure Checkout
+                                    </strong>
+
+                                    <p class="mb-0">
+
+                                        This assessment prototype does
+                                        not process or store real payment
+                                        information.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- =================================
+                                 BUTTONS
+                                 ================================= -->
+
+                            <div class="payment-actions">
+
+                                <button type="submit"
+                                        class="btn btn-adventure btn-lg">
+
+                                    Place Order
+
+                                </button>
+
+
+                                <a href="shipping.html"
+                                   class="btn btn-outline-adventure btn-lg">
+
+                                    Back
+
+                                </a>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         ORDER SUMMARY
+                         ===================================== -->
+
+                    <aside class="col-12 col-lg-4">
+
+                        <div class="cart-summary payment-summary">
+
+                            <h2>
+                                Order Summary
+                            </h2>
+
+
+                            <hr>
+
+
+
+                            <!-- Product 1 -->
+
+                            <div class="payment-summary-product">
+
+                                <img src="images/backpack.jpeg"
+                                     alt="Southern Alps Hiking Pack"
+                                     class="payment-summary-image">
+
+
+                                <div class="payment-summary-details">
+
+                                    <p class="summary-product-name">
+                                        Southern Alps Hiking Pack
+                                    </p>
+
+                                    <small>
+                                        Qty: 1
+                                    </small>
+
+                                </div>
+
+
+                                <span>
+                                    $249.00
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Product 2 -->
+
+                            <div class="payment-summary-product">
+
+                                <img src="images/hiking-boots.jpeg"
+                                     alt="Fiordland Trail Boots"
+                                     class="payment-summary-image">
+
+
+                                <div class="payment-summary-details">
+
+                                    <p class="summary-product-name">
+                                        Fiordland Trail Boots
+                                    </p>
+
+                                    <small>
+                                        Qty: 1
+                                    </small>
+
+                                </div>
+
+
+                                <span>
+                                    $199.00
+                                </span>
+
+                            </div>
+
+
+                            <hr>
+
+
+
+                            <!-- Subtotal -->
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <span id="paymentSubtotal">
+                                    $448.00
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Shipping -->
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Shipping
+                                </span>
+
+                                <span id="paymentShipping">
+                                    $25.00
+                                </span>
+
+                            </div>
+
+
+                            <hr>
+
+
+
+                            <!-- Total -->
+
+                            <div class="summary-row summary-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <span id="paymentTotal">
+                                    $473.00
+                                </span>
+
+                            </div>
+
+
+
+                            <p class="summary-note">
+
+                                Review your order and payment
+                                information before placing the order.
+
+                            </p>
+
+
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer"
+            id="footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- Company information -->
+
+                <div class="col-12 col-md-4">
+
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear"
+                         class="footer-logo">
+
+
+                    <p class="mt-3">
+
+                        Outdoor equipment for adventures
+                        throughout Aotearoa New Zealand.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Main menu -->
+
+                <div class="col-6 col-md-2">
+
+                    <h2 class="h6">
+                        Main Menu
+                    </h2>
+
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Help
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Customer Care -->
+
+                <div class="col-6 col-md-3">
+
+                    <h2 class="h6">
+                        Customer Care
+                    </h2>
+
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="shipping.html">
+                                Shipping
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Returns
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Discover -->
+
+                <div class="col-12 col-md-3">
+
+                    <h2 class="h6">
+                        Discover
+                    </h2>
+
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="shop.html">
+                                Hiking
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Camping
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html">
+                                Outdoor Clothing
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="text-center mb-0">
+
+                &copy; 2026 Aotearoa Adventure Gear.
+                All rights reserved.
+
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+         ===================================================== -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/payment.js"></script>
+
+
+
+</body>
+
+</html>

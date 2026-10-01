@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Review your Aotearoa Adventure Gear shopping cart before checkout.">
+
+    <title>Aotearoa Adventure Gear | Shopping Cart</title>
+
+    <!-- Bootstrap CSS stored locally -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-style.css">
+</head>
+
+
+<body id="top">
+
+
+    <!-- =====================================================
+         HEADER AND NAVIGATION
+         ===================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand"
+                   href="index.html">
+
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear logo"
+                         class="site-logo">
+
+                </a>
+
+
+                <!-- Mobile navigation button -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="index.html#about">
+                                About
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="shop.html">
+                                Shop
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="#footer">
+                                Help
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item ms-lg-2">
+
+                            <a class="btn btn-adventure active"
+                               href="cart.html">
+
+                                <span aria-hidden="true">🛒</span>
+                                Your Cart
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CART CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             CHECKOUT PROGRESS
+             ================================================= -->
+
+        <section class="checkout-progress-section">
+
+            <div class="container">
+
+                <nav aria-label="Checkout progress">
+
+                    <div class="checkout-progress">
+
+
+                        <!-- Step 1 -->
+
+                        <div class="checkout-step active">
+
+                            <div class="checkout-step-number">
+                                1
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Shopping Cart
+                            </div>
+
+                        </div>
+
+
+                        <div class="checkout-line"></div>
+
+
+                        <!-- Step 2 -->
+
+                        <div class="checkout-step">
+
+                            <div class="checkout-step-number">
+                                2
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Shipping Details
+                            </div>
+
+                        </div>
+
+
+                        <div class="checkout-line"></div>
+
+
+                        <!-- Step 3 -->
+
+                        <div class="checkout-step">
+
+                            <div class="checkout-step-number">
+                                3
+                            </div>
+
+                            <div class="checkout-step-label">
+                                Payment Options
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SHOPPING CART
+             ================================================= -->
+
+        <section class="cart-section">
+
+            <div class="container">
+
+                <h1 class="cart-page-title">
+                    Shopping Cart
+                </h1>
+
+
+                <div class="row g-5">
+
+
+                    <!-- =====================================
+                         CART PRODUCTS
+                         ===================================== -->
+
+                    <div class="col-12 col-lg-8">
+
+
+                        <!-- =================================
+                             PRODUCT 1
+                             ================================= -->
+
+                        <article class="cart-item">
+
+                            <div class="row align-items-center g-4">
+
+
+                                <!-- Product image -->
+
+                                <div class="col-12 col-sm-4 col-md-3">
+
+                                    <a href="product.html">
+
+                                        <img src="images/backpack.jpeg"
+                                             alt="Southern Alps Hiking Pack"
+                                             class="cart-product-image">
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <!-- Product information -->
+
+                                <div class="col-12 col-sm-8 col-md-5">
+
+                                    <h2 class="h5">
+                                        Southern Alps Hiking Pack
+                                    </h2>
+
+
+                                    <p class="cart-product-option">
+                                        Size: 45 Litre
+                                    </p>
+
+
+                                    <p class="cart-product-price">
+                                        $249.00
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- Quantity -->
+
+                                <div class="col-7 col-sm-6 col-md-2">
+
+                                    <label for="quantity1"
+                                           class="form-label">
+
+                                        Quantity
+
+                                    </label>
+
+
+                                    <input type="number"
+                                           id="quantity1"
+                                           name="quantity1"
+                                           class="form-control cart-quantity"
+                                           value="1"
+                                           min="1"
+                                           max="10"
+                                           step="1"
+                                           data-price="249"
+                                           required>
+
+                                </div>
+
+
+
+                                <!-- Remove -->
+
+                                <div class="col-5 col-sm-6 col-md-2 text-md-end">
+
+                                    <button type="button"
+                                            class="btn btn-link cart-remove-button">
+
+                                        Remove
+
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        </article>
+
+
+                        <hr>
+
+
+
+                        <!-- =================================
+                             PRODUCT 2
+                             ================================= -->
+
+                        <article class="cart-item">
+
+                            <div class="row align-items-center g-4">
+
+
+                                <!-- Product image -->
+
+                                <div class="col-12 col-sm-4 col-md-3">
+
+                                    <a href="product.html">
+
+                                        <img src="images/hiking-boots.jpeg"
+                                             alt="Fiordland Trail Boots"
+                                             class="cart-product-image">
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <!-- Product information -->
+
+                                <div class="col-12 col-sm-8 col-md-5">
+
+                                    <h2 class="h5">
+                                        Fiordland Trail Boots
+                                    </h2>
+
+
+                                    <p class="cart-product-option">
+                                        Size: NZ 10
+                                    </p>
+
+
+                                    <p class="cart-product-price">
+                                        $199.00
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- Quantity -->
+
+                                <div class="col-7 col-sm-6 col-md-2">
+
+                                    <label for="quantity2"
+                                           class="form-label">
+
+                                        Quantity
+
+                                    </label>
+
+
+                                    <input type="number"
+                                           id="quantity2"
+                                           name="quantity2"
+                                           class="form-control cart-quantity"
+                                           value="1"
+                                           min="1"
+                                           max="10"
+                                           step="1"
+                                           data-price="199"
+                                           required>
+
+                                </div>
+
+
+
+                                <!-- Remove -->
+
+                                <div class="col-5 col-sm-6 col-md-2 text-md-end">
+
+                                    <button type="button"
+                                            class="btn btn-link cart-remove-button">
+
+                                        Remove
+
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        </article>
+
+
+                        <hr>
+
+
+
+                        <!-- =================================
+                             CONTINUE SHOPPING
+                             ================================= -->
+
+                        <div class="continue-shopping">
+
+                            <a href="shop.html"
+                               class="continue-shopping-link">
+
+                                ← Continue Shopping
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         ORDER SUMMARY
+                         ===================================== -->
+
+                    <aside class="col-12 col-lg-4">
+
+                        <div class="cart-summary">
+
+                            <h2>
+                                Summary
+                            </h2>
+
+
+                            <hr>
+
+
+                            <!-- Product 1 -->
+
+                            <div class="summary-product">
+
+                                <div>
+
+                                    <p class="summary-product-name">
+                                        Southern Alps Hiking Pack
+                                    </p>
+
+                                    <small>
+                                        Qty: 1
+                                    </small>
+
+                                </div>
+
+                                <p>
+                                    $249.00
+                                </p>
+
+                            </div>
+
+
+
+                            <!-- Product 2 -->
+
+                            <div class="summary-product">
+
+                                <div>
+
+                                    <p class="summary-product-name">
+                                        Fiordland Trail Boots
+                                    </p>
+
+                                    <small>
+                                        Qty: 1
+                                    </small>
+
+                                </div>
+
+                                <p>
+                                    $199.00
+                                </p>
+
+                            </div>
+
+
+                            <hr>
+
+
+
+                            <!-- Subtotal -->
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <span id="cartSubtotal">
+                                    $448.00
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Shipping -->
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Shipping
+                                </span>
+
+                                <span id="cartShipping">
+                                    $25.00
+                                </span>
+
+                            </div>
+
+
+                            <hr>
+
+
+
+                            <!-- Total -->
+
+                            <div class="summary-row summary-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <span id="cartTotal">
+                                    $473.00
+                                </span>
+
+                            </div>
+
+
+                            <p class="summary-note">
+
+                                Shipping will be confirmed on the
+                                next step. Orders over $600 qualify
+                                for free shipping.
+
+                            </p>
+
+
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     CHECKOUT BUTTONS
+                     ========================================= -->
+
+                <div class="cart-actions">
+
+                    <a href="shipping.html"
+                       class="btn btn-adventure btn-lg">
+
+                        Next
+
+                    </a>
+
+
+                    <a href="shop.html"
+                       class="btn btn-outline-adventure btn-lg">
+
+                        Cancel
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer"
+            id="footer">
+
+        <div class="container">
+
+
+            <div class="row g-4">
+
+
+                <!-- Company information -->
+
+                <div class="col-12 col-md-4">
+
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear"
+                         class="footer-logo">
+
+
+                    <p class="mt-3">
+
+                        Outdoor equipment for adventures
+                        throughout Aotearoa New Zealand.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Main menu -->
+
+                <div class="col-6 col-md-2">
+
+                    <h2 class="h6">
+                        Main Menu
+                    </h2>
+
+
+                    <ul class="list-unstyled">
+
+                        <li>
+
+                            <a href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="index.html#about">
+                                About
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="shop.html">
+                                Shop
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#footer">
+                                Help
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Customer care -->
+
+                <div class="col-6 col-md-3">
+
+                    <h2 class="h6">
+                        Customer Care
+                    </h2>
+
+
+                    <ul class="list-unstyled">
+
+                        <li>
+
+                            <a href="shipping.html">
+                                Shipping
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#footer">
+                                Returns
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#footer">
+                                Contact Us
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Discover -->
+
+                <div class="col-12 col-md-3">
+
+                    <h2 class="h6">
+                        Discover
+                    </h2>
+
+
+                    <ul class="list-unstyled">
+
+                        <li>
+
+                            <a href="shop.html">
+                                Hiking
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="shop.html">
+                                Camping
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="shop.html">
+                                Outdoor Clothing
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <p class="text-center mb-0">
+
+                &copy; 2026 Aotearoa Adventure Gear.
+                All rights reserved.
+
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript stored locally -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+
+
+</body>
+
+</html>
